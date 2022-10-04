@@ -31,6 +31,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/date-picker.css">
     <link rel="stylesheet" type="text/css" href="assets/css/prism.css">
     <link rel="stylesheet" type="text/css" href="assets/css/vector-map.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dropzone.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
@@ -63,6 +66,12 @@
             switch($page){
               case "news":
                 include 'pages/new-dash.php';
+                break;
+              case "userMa":
+                include 'pages/user-management.php';
+                break;
+              case "projectMA":
+                include 'pages/project-management.php';
                 break;
               default:
                 include 'pages/home.php';
@@ -116,10 +125,19 @@
    <script src="assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
     <script src="assets/js/datatable/datatables/datatable.custom.js"></script>
     <script src="assets/js/tooltip-init.js"></script>
+    <script src="assets/js/editor/ckeditor/ckeditor.js"></script>
+    <script src="assets/js/editor/ckeditor/adapters/jquery.js"></script>
+    <script src="assets/js/dropzone/dropzone.js"></script>
+    <script src="assets/js/dropzone/dropzone-script.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/theme-customizer/customizer.js"></script>
+    <script src="assets/js/select2/select2.full.min.js"></script>
+    <script src="assets/js/select2/select2-custom.js"></script>
+    
+   
+    <script src="assets/js/form-validation-custom.js"></script>
     <!-- login js-->
     <!-- Plugin used-->
   </body>

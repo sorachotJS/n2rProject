@@ -3,17 +3,7 @@
             <div class="badge-bottom"><span class="badge badge-primary">New</span></div><a href="user-profile.html">
               <h6 class="mt-3 f-14 f-w-600">Sorachot Jaisat</h6></a>
             <p class="mb-0 font-roboto">CEO Developer</p>
-            <ul>
-              <li><span><span class="counter">19.8</span>k</span>
-                <p>Follow</p>
-              </li>
-              <li><span>6 year</span>
-                <p>Experince</p>
-              </li>
-              <li><span><span class="counter">95.2</span>k</span>
-                <p>Follower </p>
-              </li>
-            </ul>
+           
           </div>
           <nav>
             <div class="main-navbar">
@@ -30,7 +20,7 @@
                   </li>
                   <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="users"></i><span>User</span></a>
                     <ul class="nav-submenu menu-content">
-                      <li><a href="index.html">User Dashboard</a></li>
+                      <li><a href="?page=userMa">User Dashboard</a></li>
                     </ul>
                   </li>
                   <!-- <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Widgets</span></a>
@@ -51,16 +41,33 @@
                   </li> -->
                   <li class="sidebar-main-title">
                     <div>
-                      <h6>Blog Management             </h6>
+                      <h6>Project Management             </h6>
                     </div>
                   </li>
-                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit-3"></i><span>News</span></a>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit-3"></i><span>Project</span></a>
                     <ul class="nav-submenu menu-content">
-                      <li><a href="?page=news">News Dashboard</a></li>
-                      <li><a href="?page=news-create">News Create</a></li>
+                      <!-- <li><a href="?page=news">Project</a></li> -->
+                      <li><a href="?page=projectMA">Project Management    </a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit-3"></i><span>Article</span></a>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit-3"></i><span>Blog</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <!-- <li><a href="?page=news">Project</a></li> -->
+                      <li><a href="?page=BlogMa">Blog Management    </a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-main-title">
+                    <div>
+                      <h6>Other             </h6>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit-3"></i><span>Slide Image</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <!-- <li><a href="?page=news">Project</a></li> -->
+                      <li><a href="?page=slideImg">Slide Image Management    </a></li>
+                    </ul>
+                  </li>
+                  <!-- <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit-3"></i><span>Article</span></a>
                     <ul class="nav-submenu menu-content">
                       <li><a href="news">Article Dashboard</a></li>
                       <li><a href="news-create">Article Create</a></li>
@@ -71,9 +78,9 @@
                       <li><a href="knowledge">Knowledge Dashboard</a></li>
                       <li><a href="knowledge-create">Knowledge Create</a></li>
                     </ul>
-                  </li>
+                  </li> -->
 
-                  <li class="sidebar-main-title">
+                  <!-- <li class="sidebar-main-title">
                     <div>
                       <h6>Forum Management</h6>
                     </div>
@@ -84,8 +91,8 @@
                       <li><a href="forum-create">Forum Create</a></li>
                     </ul>
                   </li>
-                
-                  <li class="sidebar-main-title">
+                 -->
+                  <!-- <li class="sidebar-main-title">
                     <div>
                       <h6>Room management</h6>
                     </div>
@@ -119,11 +126,11 @@
                     <ul class="nav-submenu menu-content">
                       <li><a href="gallery.html">event calendar</a></li>
                     </ul>
-                  </li>
+                  </li>-->
                   
                  
                  
-                </ul>
+                </ul> 
               </div>
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
             </div>
