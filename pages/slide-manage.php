@@ -3,11 +3,11 @@
         <div class="page-header">
             <div class="row">
                 <div class="col-sm-6">
-                    <h3>Project Manage</h3>
+                    <h3>Slide Manage</h3>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Project</li>
-                        <li class="breadcrumb-item active">Add Project</li>
+                        <li class="breadcrumb-item">Slide</li>
+                        <li class="breadcrumb-item active">Add Slide</li>
                     </ol>
                 </div>
                 <div class="col-sm-6">
@@ -49,7 +49,7 @@
                                 <tbody id="tDetail">
                                     <?php
                                     include './api/connect.php';
-                                    $sql = "SELECT * FROM t_project";
+                                    $sql = "SELECT * FROM t_slideimg";
                                     $stmp = $conn->prepare($sql);
                                     $stmp->execute();
                                     $result = $stmp->fetchAll(PDO::FETCH_ASSOC);
@@ -146,7 +146,7 @@
 
         $.ajax({
             type: "POST",
-            url: "api/project_api.php",
+            url: "api/slideImg_api.php",
             data: {
                 title: title,
                 category: category,
@@ -181,7 +181,7 @@
     // console.log(username + " : " + password + " : " +status)
         $.ajax({
         type: "POST",
-        url: "api/project_api.php",
+        url: "api/slideImg_api.php",
         data: {
           idd: idd,
             method: 'DELETE',

@@ -42,6 +42,7 @@
     <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <!-- Loader starts-->
@@ -73,6 +74,9 @@
               case "projectMA":
                 include 'pages/project-management.php';
                 break;
+                case "slideImg":
+                  include 'pages/slide-manage.php';
+                  break;
               default:
                 include 'pages/home.php';
             }
@@ -82,8 +86,10 @@
        <?php include 'shared/footer-bar.php' ?>
       </div>
     </div>
+    
     <!-- latest jquery-->
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <!-- feather icon js-->
     <script src="assets/js/icons/feather-icon/feather.min.js"></script>
     <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
@@ -122,8 +128,7 @@
     <script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
     <!-- Plugins JS Ends-->
      <!-- Plugins JS start-->
-   <script src="assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-    <script src="assets/js/datatable/datatables/datatable.custom.js"></script>
+     <!-- <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
     <script src="assets/js/tooltip-init.js"></script>
     <script src="assets/js/editor/ckeditor/ckeditor.js"></script>
     <script src="assets/js/editor/ckeditor/adapters/jquery.js"></script>
@@ -140,5 +145,19 @@
     <script src="assets/js/form-validation-custom.js"></script>
     <!-- login js-->
     <!-- Plugin used-->
+    <script>
+       if (!sessionStorage.getItem("UserName")) {
+      window.location.href = "/JSdashboard/";
+    }
+
+    
+
+
+      $(document).ready(function () {
+    $('#basic-1').DataTable({
+        
+    });
+});
+    </script>
   </body>
 </html>
